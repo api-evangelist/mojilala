@@ -1,7 +1,28 @@
 aid: mojilala
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mojilala.png
 name: MojiLala
-description: MojiLala is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  MojiLala was a marketplace for stickers, GIFs, and emoji that offered a
+  content API and mobile SDKs so developers could embed searchable sticker and
+  animated-sticker packs into messaging and social apps. Backed by 500 Global,
+  the team subsequently pivoted to LEO AR (leoapp.com), a consumer augmented
+  reality application for creating, transforming, and sharing AR experiences.
+  As of this profiling the original MojiLala developer surface at mojilala.com
+  is offline (returns HTTP 403/530) and the active property, leoapp.com, is a
+  single-page marketing/app site that publishes no public developer API,
+  documentation, or well-known discovery endpoints. This profile is retained as
+  a network lead; no live API artifacts were discoverable.
 url: https://raw.githubusercontent.com/api-evangelist/mojilala/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Stickers
+- GIFs
+- Emoji
+- Content
+- Augmented Reality
+- Mobile
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,10 @@ maintainers:
 common:
 - type: Website
   url: https://leoapp.com
+- type: DomainSecurity
+  url: security/mojilala-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
